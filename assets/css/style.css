@@ -287,14 +287,14 @@ form.enquiry{display:grid;gap:1rem}
 .vz-flow{stroke-dasharray:6 8;animation:vzflow 1.4s linear infinite}
 .vz-blink{animation:vzblink 2.2s ease-in-out infinite}
 .vz-approach{animation:vzapproach 5s ease-in-out infinite}
-.vz-gate{transform-box:fill-box;transform-origin:0% 50%;animation:vzgate 4.2s ease-in-out infinite alternate}
+.vz-glow{opacity:.35;animation:vzglow 2.6s ease-in-out infinite}
 .vz-ring{transform-box:fill-box;transform-origin:center;animation:vzring 2.6s ease-out infinite}
 @keyframes vzflow{to{stroke-dashoffset:-14}}
 @keyframes vzblink{50%{opacity:.25}}
 @keyframes vzapproach{0%{transform:translateY(26px);opacity:0}15%{opacity:1}60%,85%{transform:translateY(-16px);opacity:1}100%{transform:translateY(-16px);opacity:0}}
-@keyframes vzgate{from{transform:rotate(0deg)}to{transform:rotate(-34deg)}}
+@keyframes vzglow{0%,100%{opacity:.12}50%{opacity:.5}}
 @keyframes vzring{0%{transform:scale(.6);opacity:.9}100%{transform:scale(1.9);opacity:0}}
-@media (prefers-reduced-motion:reduce){.vz-flow,.vz-blink,.vz-approach,.vz-ring,.vz-gate{animation:none}}
+@media (prefers-reduced-motion:reduce){.vz-flow,.vz-blink,.vz-approach,.vz-ring,.vz-glow{animation:none}}
 
 /* site visit + package builder */
 .builder{display:grid;gap:1.5rem;align-items:start;min-width:0}
